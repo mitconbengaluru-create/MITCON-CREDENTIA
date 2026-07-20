@@ -2,7 +2,9 @@
   "scripts": {
     "dev:backend": "npm run dev --prefix backend",
     "dev:frontend": "npm run dev --prefix frontend",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "npm install --prefix backend && npm run db:generate --prefix backend",
+    "start": "npm start --prefix backend"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",
