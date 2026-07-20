@@ -4,7 +4,9 @@
     "builder": "NIXPACKS",
     "buildCommand": "npm install --prefix backend && npm run db:generate --prefix backend",
     "watchPatterns": [
-      "backend/**"
+      "backend/**",
+      "package.json",
+      "railway.json"
     ]
   },
   "deploy": {
