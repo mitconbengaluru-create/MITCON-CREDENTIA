@@ -1,9 +1,3 @@
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 export default async function handler(req, res) {
   // Read target backend URL from environment variables
   const backendUrl = process.env.BACKEND_URL || 'http://localhost:5000';
@@ -16,11 +10,19 @@ export default async function handler(req, res) {
     // Remove host to avoid host mismatch issues on the destination
     delete headers.host;
 
+    let body = undefined;
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      if (req.body) {
+        body = typeof req.body === 'object' ? JSON.stringify(req.body) : req.body;
+        // Update Content-Length header to match the stringified body length
+        headers['content-length'] = Buffer.byteLength(body).toString();
+      }
+    }
+
     const response = await fetch(targetUrl, {
       method: req.method,
       headers: headers,
-      body: req.method !== 'GET' && req.method !== 'HEAD' ? req : undefined,
-      duplex: 'half' // Required by Node's global fetch when streaming request bodies
+      body: body
     });
 
     const data = await response.text();
