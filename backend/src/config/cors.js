@@ -8,7 +8,11 @@ const whitelist = env.CORS_ORIGINS
 
 export const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin || whitelist.indexOf(origin) !== -1) {
+    if (
+      !origin || 
+      whitelist.indexOf(origin) !== -1 || 
+      (origin.endsWith('.vercel.app') && origin.includes('mitcon-credentia'))
+    ) {
       callback(null, true);
     } else {
       callback(new Error(`Not allowed by CORS: origin ${origin} is not in whitelist`));
