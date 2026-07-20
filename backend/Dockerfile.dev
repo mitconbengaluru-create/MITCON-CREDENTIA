@@ -1,0 +1,20 @@
+FROM node:20-alpine
+
+WORKDIR /usr/src/app
+
+RUN apk add --no-cache libc6-compat
+
+COPY package*.json ./
+COPY prisma ./prisma/
+
+# Install all dependencies including devDependencies
+RUN npm install
+
+# Generate Prisma Client
+RUN npx prisma generate
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["npm", "run", "dev"]

@@ -1,0 +1,187 @@
+{
+  "policies": {
+    "passwordMinLength": 8,
+    "requireMfa": false,
+    "sessionTimeoutMinutes": 30,
+    "allowedUploadFormats": [
+      "pdf",
+      "docx",
+      "xlsx"
+    ],
+    "autoRejectExpiredCheckouts": false,
+    "maxCheckoutDurationDays": 30
+  },
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Sarah Jenkins",
+      "email": "super1@bitcoin-credentials.org",
+      "role": "super-admin",
+      "department": "Management",
+      "createdAt": "2026-07-15T05:35:17.937Z",
+      "status": "active"
+    },
+    {
+      "id": "usr-2",
+      "name": "Michael Chang",
+      "email": "admin1@bitcoin-credentials.org",
+      "role": "admin",
+      "department": "Management",
+      "createdAt": "2026-07-15T05:35:17.938Z",
+      "status": "active"
+    },
+    {
+      "id": "usr-3",
+      "name": "Robert Downey",
+      "email": "user1@bitcoin-credentials.org",
+      "role": "user",
+      "department": "Engineering",
+      "createdAt": "2026-07-15T05:35:17.938Z",
+      "status": "active"
+    },
+    {
+      "id": "usr-4",
+      "name": "Satoshi Nakamoto",
+      "email": "dev1@bitcoin-credentials.org",
+      "role": "developer",
+      "department": "Development",
+      "createdAt": "2026-07-15T05:35:17.938Z",
+      "status": "active"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-1",
+      "documentId": "DOC-HR-002",
+      "documentName": "HR General Policy & Employee Handbook",
+      "department": "HR",
+      "owner": "Sarah Jenkins",
+      "classification": "Confidential",
+      "dateUploaded": "2026-07-15T05:35:17.938Z",
+      "expiryDate": "2027-12-31",
+      "tags": [
+        "policy",
+        "handbook",
+        "hr"
+      ],
+      "filePath": "hr/policy/handbook.pdf",
+      "fileSize": "1.8 MB",
+      "status": "Approved",
+      "uploadedBy": "Sarah Jenkins",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "version": 1,
+          "uploadedAt": "2026-07-15T05:35:17.938Z",
+          "uploadedBy": "Sarah Jenkins",
+          "changeSummary": "Initial release of standard policy handbook.",
+          "filePath": "hr/policy/handbook.pdf",
+          "fileSize": "1.8 MB"
+        }
+      ],
+      "project": "HR Operations",
+      "client": "Internal Core"
+    },
+    {
+      "id": "doc-2",
+      "documentId": "DOC-ENG-2026-001",
+      "documentName": "System Architectural Design Blueprint",
+      "department": "Engineering",
+      "owner": "Robert Downey",
+      "classification": "Secret",
+      "dateUploaded": "2026-07-15T05:35:17.938Z",
+      "expiryDate": "2028-06-30",
+      "tags": [
+        "architecture",
+        "blueprint",
+        "system"
+      ],
+      "filePath": "eng/specs/blueprint.pdf",
+      "fileSize": "4.5 MB",
+      "status": "Approved",
+      "uploadedBy": "Robert Downey",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "version": 1,
+          "uploadedAt": "2026-07-15T05:35:17.938Z",
+          "uploadedBy": "Robert Downey",
+          "changeSummary": "Initial architecture specifications diagram.",
+          "filePath": "eng/specs/blueprint.pdf",
+          "fileSize": "4.5 MB"
+        }
+      ],
+      "project": "MITCON Credentia Core",
+      "client": "Internal Core"
+    },
+    {
+      "id": "doc-3",
+      "documentId": "DOC-LEG-2026-001",
+      "documentName": "Standard Non-Disclosure Agreement Document",
+      "department": "Legal",
+      "owner": "Michael Chang",
+      "classification": "Confidential",
+      "dateUploaded": "2026-07-15T05:35:17.938Z",
+      "expiryDate": "2029-01-01",
+      "tags": [
+        "legal",
+        "nda",
+        "agreement"
+      ],
+      "filePath": "legal/agreements/nda.docx",
+      "fileSize": "1.0 MB",
+      "status": "Pending Approval",
+      "uploadedBy": "Michael Chang",
+      "currentVersion": 1,
+      "versions": [
+        {
+          "version": 1,
+          "uploadedAt": "2026-07-15T05:35:17.938Z",
+          "uploadedBy": "Michael Chang",
+          "changeSummary": "Standard template agreement draft.",
+          "filePath": "legal/agreements/nda.docx",
+          "fileSize": "1.0 MB"
+        }
+      ],
+      "project": "Legal Templates",
+      "client": "Internal Core"
+    }
+  ],
+  "checkouts": [],
+  "returns": [],
+  "logs": [
+    {
+      "id": "log-1",
+      "timestamp": "2026-07-15T05:35:17.938Z",
+      "user": "System",
+      "role": "super-admin",
+      "action": "Policy Update",
+      "ipAddress": "127.0.0.1",
+      "device": "System Server",
+      "itemAffected": "Global Ring Encryption Rules",
+      "prevValue": "Default Initial Configuration",
+      "newValue": "{\"passwordMinLength\":8,\"requireMfa\":false,\"sessionTimeoutMinutes\":30,\"allowedUploadFormats\":[\"pdf\",\"docx\",\"xlsx\"],\"autoRejectExpiredCheckouts\":false,\"maxCheckoutDurationDays\":30}"
+    },
+    {
+      "id": "log-1784093849122",
+      "timestamp": "2026-07-15T05:37:29.122Z",
+      "user": "Sarah Jenkins",
+      "role": "super-admin",
+      "action": "Login",
+      "ipAddress": "::1",
+      "device": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+      "itemAffected": "User Security Session",
+      "newValue": "Authentication Session Validated"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "not-1",
+      "title": "System Seeding Active",
+      "message": "Welcome to MITCON Credentia. The secure node is fully synchronized.",
+      "status": "unread",
+      "timestamp": "2026-07-15T05:35:17.938Z"
+    }
+  ],
+  "approvals": []
+}

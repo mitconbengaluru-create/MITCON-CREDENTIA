@@ -1,0 +1,116 @@
+export const initialDocuments = [
+  // Falcon Technologies Private Limited
+  { id: "doc-1", client: "Falcon Technologies Private Limited", documentName: "DTD", dateOfRegistration: "2026-06-16" },
+  { id: "doc-2", client: "Falcon Technologies Private Limited", documentName: "NDU", dateOfRegistration: "2026-06-16" },
+  { id: "doc-3", client: "Falcon Technologies Private Limited", documentName: "DPG", dateOfRegistration: "2026-06-16" },
+  { id: "doc-4", client: "Falcon Technologies Private Limited", documentName: "DPA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-5", client: "Falcon Technologies Private Limited", documentName: "SPA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-6", client: "Falcon Technologies Private Limited", documentName: "PU", dateOfRegistration: "2026-06-16" },
+  { id: "doc-7", client: "Falcon Technologies Private Limited", documentName: "DOH", dateOfRegistration: "2026-06-16" },
+  { id: "doc-8", client: "Falcon Technologies Private Limited", documentName: "DTA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-9", client: "Falcon Technologies Private Limited", documentName: "DPN", dateOfRegistration: "2026-06-16" },
+  { id: "doc-10", client: "Falcon Technologies Private Limited", documentName: "3 Cheques", dateOfRegistration: "2026-06-16" },
+  { id: "doc-11", client: "Falcon Technologies Private Limited", documentName: "POA For deed of hypothecation", dateOfRegistration: "2026-06-16" },
+  { id: "doc-12", client: "Falcon Technologies Private Limited", documentName: "POA for share pledge agreement", dateOfRegistration: "2026-06-16" },
+
+  // Mythreyi Estates Pvt Ltd (Folder 1)
+  { id: "doc-13", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DTD", dateOfRegistration: "2026-06-16" },
+  { id: "doc-14", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "Hypothecation POA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-15", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DTA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-16", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DOG (Mythreyi Infra)", dateOfRegistration: "2026-06-16" },
+  { id: "doc-17", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DOG (Mythreyi Promoters)", dateOfRegistration: "2026-06-16" },
+  { id: "doc-18", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DTD POA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-19", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DP Note", dateOfRegistration: "2026-06-16" },
+  { id: "doc-20", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "DP Note", dateOfRegistration: "2026-06-16" },
+  { id: "doc-21", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "Undertaking cum indemnity letter", dateOfRegistration: "2026-06-16" },
+  { id: "doc-22", client: "Mythreyi Estates Pvt Ltd (Folder 1)", documentName: "Arbitration", dateOfRegistration: "2026-06-16" },
+
+  // Mythreyi Estates Pvt Ltd (Folder 2)
+  { id: "doc-23", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Cash shortfall undertaking", dateOfRegistration: "2026-06-16" },
+  { id: "doc-24", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Personal Guarantee", dateOfRegistration: "2026-06-16" },
+  { id: "doc-25", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "FDCs", dateOfRegistration: "2026-06-16" },
+  { id: "doc-26", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Indenture of mortgage", dateOfRegistration: "2026-06-16" },
+  { id: "doc-27", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Rectification deed for 10M", dateOfRegistration: "2026-06-16" },
+  { id: "doc-28", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Share pledge POA 2", dateOfRegistration: "2026-06-16" },
+  { id: "doc-29", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Letter of Continuity", dateOfRegistration: "2026-06-16" },
+  { id: "doc-30", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Certificate u/s 180 (1) (c)", dateOfRegistration: "2026-06-16" },
+  { id: "doc-31", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Letter for deposite of title deeds", dateOfRegistration: "2026-06-16" },
+  { id: "doc-32", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "MOU-2", dateOfRegistration: "2026-06-16" },
+  { id: "doc-33", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Original sale Deed -2", dateOfRegistration: "2026-06-16" },
+  { id: "doc-34", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Unregd Agreement of sale", dateOfRegistration: "2026-06-16" },
+  { id: "doc-35", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "PPG", dateOfRegistration: "2026-06-16" },
+  { id: "doc-36", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "28 - Cheques", dateOfRegistration: "2026-06-16" },
+  { id: "doc-37", client: "Mythreyi Estates Pvt Ltd (Folder 2)", documentName: "Agreement", dateOfRegistration: "2026-06-16" },
+
+  // Address maker site developers LLP
+  { id: "doc-38", client: "Address maker site developers LLP", documentName: "Letter of continuity", dateOfRegistration: "2026-06-16" },
+  { id: "doc-39", client: "Address maker site developers LLP", documentName: "Deed of undertaking", dateOfRegistration: "2026-06-16" },
+  { id: "doc-40", client: "Address maker site developers LLP", documentName: "DTA", dateOfRegistration: "2026-06-16" },
+  { id: "doc-41", client: "Address maker site developers LLP", documentName: "DTD", dateOfRegistration: "2026-06-16" },
+  { id: "doc-42", client: "Address maker site developers LLP", documentName: "Specimen Signature of the issuer, Pledgor & Developer", dateOfRegistration: "2026-06-16" },
+
+  // Wortgage Finance Pvt Ltd
+  { id: "doc-43", client: "Wortgage Finance Pvt Ltd", documentName: "POA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-44", client: "Wortgage Finance Pvt Ltd", documentName: "DTD", dateOfRegistration: "2026-06-24" },
+  { id: "doc-45", client: "Wortgage Finance Pvt Ltd", documentName: "DTA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-46", client: "Wortgage Finance Pvt Ltd", documentName: "DOG", dateOfRegistration: "2026-06-24" },
+  { id: "doc-47", client: "Wortgage Finance Pvt Ltd", documentName: "DOH", dateOfRegistration: "2026-06-24" },
+  { id: "doc-48", client: "Wortgage Finance Pvt Ltd", documentName: "Term sheet for investment", dateOfRegistration: "2026-06-24" },
+
+  // Triangle Realty Ventures Pvt Ltd
+  { id: "doc-49", client: "Triangle Realty Ventures Pvt Ltd", documentName: "MOC RDTD", dateOfRegistration: "2026-06-24" },
+  { id: "doc-50", client: "Triangle Realty Ventures Pvt Ltd", documentName: "DMET", dateOfRegistration: "2026-06-24" },
+  { id: "doc-51", client: "Triangle Realty Ventures Pvt Ltd", documentName: "CPA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-52", client: "Triangle Realty Ventures Pvt Ltd", documentName: "GPA", dateOfRegistration: "2026-06-24" },
+
+  // Wise Knead Bakes Private Ltd
+  { id: "doc-53", client: "Wise Knead Bakes Private Ltd", documentName: "PLA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-54", client: "Wise Knead Bakes Private Ltd", documentName: "FASSA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-55", client: "Wise Knead Bakes Private Ltd", documentName: "DPN", dateOfRegistration: "2026-06-24" },
+  { id: "doc-56", client: "Wise Knead Bakes Private Ltd", documentName: "FAADTD", dateOfRegistration: "2026-06-24" },
+  { id: "doc-57", client: "Wise Knead Bakes Private Ltd", documentName: "LOC", dateOfRegistration: "2026-06-24" },
+  { id: "doc-58", client: "Wise Knead Bakes Private Ltd", documentName: "SERIES -1-A- 15 CHEQUES", dateOfRegistration: "2026-06-24" },
+  { id: "doc-59", client: "Wise Knead Bakes Private Ltd", documentName: "SERIES -1-B- 25 CHEQUES", dateOfRegistration: "2026-06-24" },
+  { id: "doc-60", client: "Wise Knead Bakes Private Ltd", documentName: "DTD", dateOfRegistration: "2026-06-24" },
+  { id: "doc-61", client: "Wise Knead Bakes Private Ltd", documentName: "DOH", dateOfRegistration: "2026-06-24" },
+  { id: "doc-62", client: "Wise Knead Bakes Private Ltd", documentName: "DTAA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-63", client: "Wise Knead Bakes Private Ltd", documentName: "POA TO DOH", dateOfRegistration: "2026-06-24" },
+  { id: "doc-64", client: "Wise Knead Bakes Private Ltd", documentName: "NDU", dateOfRegistration: "2026-06-24" },
+  { id: "doc-65", client: "Wise Knead Bakes Private Ltd", documentName: "DOPG", dateOfRegistration: "2026-06-24" },
+  { id: "doc-66", client: "Wise Knead Bakes Private Ltd", documentName: "LOC", dateOfRegistration: "2026-06-24" },
+  { id: "doc-67", client: "Wise Knead Bakes Private Ltd", documentName: "DPN", dateOfRegistration: "2026-06-24" },
+
+  // Covstrat consulting Pvt Ltd
+  { id: "doc-68", client: "Covstrat consulting Pvt Ltd", documentName: "SPPOA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-69", client: "Covstrat consulting Pvt Ltd", documentName: "USPA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-70", client: "Covstrat consulting Pvt Ltd", documentName: "DTA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-71", client: "Covstrat consulting Pvt Ltd", documentName: "PG", dateOfRegistration: "2026-06-24" },
+  { id: "doc-72", client: "Covstrat consulting Pvt Ltd", documentName: "PG", dateOfRegistration: "2026-06-24" },
+  { id: "doc-73", client: "Covstrat consulting Pvt Ltd", documentName: "CSU", dateOfRegistration: "2026-06-24" },
+  { id: "doc-74", client: "Covstrat consulting Pvt Ltd", documentName: "CSU2", dateOfRegistration: "2026-06-24" },
+  { id: "doc-75", client: "Covstrat consulting Pvt Ltd", documentName: "LOC", dateOfRegistration: "2026-06-24" },
+  { id: "doc-76", client: "Covstrat consulting Pvt Ltd", documentName: "LOC2", dateOfRegistration: "2026-06-24" },
+  { id: "doc-77", client: "Covstrat consulting Pvt Ltd", documentName: "IOM", dateOfRegistration: "2026-06-24" },
+  { id: "doc-78", client: "Covstrat consulting Pvt Ltd", documentName: "UNDERTAKING", dateOfRegistration: "2026-06-24" },
+  { id: "doc-79", client: "Covstrat consulting Pvt Ltd", documentName: "DT POA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-80", client: "Covstrat consulting Pvt Ltd", documentName: "HPOA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-81", client: "Covstrat consulting Pvt Ltd", documentName: "MACDT", dateOfRegistration: "2026-06-24" },
+
+  // Curobiz Advisory Pvt Ltd
+  { id: "doc-82", client: "Curobiz Advisory Pvt Ltd", documentName: "DSM", dateOfRegistration: "2026-06-24" },
+  { id: "doc-83", client: "Curobiz Advisory Pvt Ltd", documentName: "LOC DPN", dateOfRegistration: "2026-06-24" },
+  { id: "doc-84", client: "Curobiz Advisory Pvt Ltd", documentName: "DPN", dateOfRegistration: "2026-06-24" },
+  { id: "doc-85", client: "Curobiz Advisory Pvt Ltd", documentName: "IPA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-86", client: "Curobiz Advisory Pvt Ltd", documentName: "DTA", dateOfRegistration: "2026-06-24" },
+  { id: "doc-87", client: "Curobiz Advisory Pvt Ltd", documentName: "DTD", dateOfRegistration: "2026-06-24" },
+
+  // Finsall Resources Pvt Ltd
+  { id: "doc-88", client: "Finsall Resources Pvt Ltd", documentName: "NDU", dateOfRegistration: "2026-06-24" },
+  { id: "doc-89", client: "Finsall Resources Pvt Ltd", documentName: "DOH", dateOfRegistration: "2026-06-24" },
+  { id: "doc-90", client: "Finsall Resources Pvt Ltd", documentName: "LOC", dateOfRegistration: "2026-06-24" },
+  { id: "doc-91", client: "Finsall Resources Pvt Ltd", documentName: "DPN", dateOfRegistration: "2026-06-24" },
+  { id: "doc-92", client: "Finsall Resources Pvt Ltd", documentName: "POA TO DOH", dateOfRegistration: "2026-06-24" },
+  { id: "doc-93", client: "Finsall Resources Pvt Ltd", documentName: "DPN", dateOfRegistration: "2026-06-24" },
+  { id: "doc-94", client: "Finsall Resources Pvt Ltd", documentName: "DOH", dateOfRegistration: "2026-06-24" },
+  { id: "doc-95", client: "Finsall Resources Pvt Ltd", documentName: "DTD", dateOfRegistration: "2026-06-24" }
+];

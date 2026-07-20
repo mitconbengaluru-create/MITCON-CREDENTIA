@@ -1,0 +1,98 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// ==========================================
+// Models
+// ==========================================
+
+model User {
+  id          String   @id
+  name        String
+  email       String   @unique
+  role        String
+  createdAt   DateTime @default(now()) @map("created_at")
+  status      String   @default("active")
+  designation String?
+
+  @@map("users")
+}
+
+model Document {
+  id                 String   @id
+  documentId         String   @unique @map("document_id")
+  documentName       String   @map("document_name")
+  dateUploaded       DateTime @default(now()) @map("date_uploaded")
+  expiryDate         String?  @map("expiry_date")
+  filePath           String   @map("file_path")
+  status             String   @default("Available")
+  uploadedBy         String   @map("uploaded_by")
+  client             String
+  dateOfRegistration String   @map("date_of_registration")
+  placeOfHolding     String   @map("place_of_holding")
+
+  @@map("documents")
+}
+
+model Checkout {
+  id                 String  @id
+  documentId         String  @map("document_id")
+  documentDbId       String  @map("document_db_id")
+  documentName       String  @map("document_name")
+  employeeName       String  @map("employee_name")
+  employeeId         String? @map("employee_id")
+  designation        String?
+  checkoutDate       String  @map("checkout_date")
+  destination        String
+  purpose            String
+  expectedReturnDate String  @map("expected_return_date")
+  approvalAuthority  String  @map("approval_authority")
+  status             String
+  signature          String?
+  signatureType      String? @map("signature_type")
+
+  @@map("checkouts")
+}
+
+model Return {
+  id                         String  @id
+  checkoutId                 String  @map("checkout_id")
+  documentId                 String  @map("document_id")
+  documentName               String  @map("document_name")
+  returnDate                 String  @map("return_date")
+  returnTime                 String  @map("return_time")
+  condition                  String
+  notes                      String?
+  returningEmployeeSignature String? @map("returning_employee_signature")
+  returningEmployeeName      String  @map("returning_employee_name")
+
+  @@map("returns")
+}
+
+model Notification {
+  id        String   @id
+  title     String
+  message   String
+  status    String   @default("unread")
+  timestamp DateTime @default(now())
+
+  @@map("notifications")
+}
+
+model SecurityPolicy {
+  key                        String   @id @default("global_policy")
+  passwordMinLength          Int      @default(8) @map("password_min_length")
+  requireMfa                 Boolean  @default(false) @map("require_mfa")
+  sessionTimeoutMinutes      Int      @default(30) @map("session_timeout_minutes")
+  allowedUploadFormats       String[] @default(["pdf", "docx", "xlsx"]) @map("allowed_upload_formats")
+  autoRejectExpiredCheckouts Boolean  @default(false) @map("auto_reject_expired_checkouts")
+  maxCheckoutDurationDays    Int      @default(30) @map("max_checkout_duration_days")
+
+  @@map("security_policies")
+}
