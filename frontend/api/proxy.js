@@ -27,9 +27,16 @@ export default async function handler(req, res) {
 
     const data = await response.text();
 
-    // Copy response headers
+    // Copy response headers (excluding content-modifying headers)
     response.headers.forEach((value, key) => {
-      res.setHeader(key, value);
+      const lowerKey = key.toLowerCase();
+      if (
+        lowerKey !== 'content-encoding' && 
+        lowerKey !== 'content-length' && 
+        lowerKey !== 'transfer-encoding'
+      ) {
+        res.setHeader(key, value);
+      }
     });
 
     res.status(response.status).send(data);

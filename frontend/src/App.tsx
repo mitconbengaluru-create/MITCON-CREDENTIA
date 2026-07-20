@@ -116,8 +116,9 @@ export default function App() {
       // Setup live poller to mimic websockets real-time ticker
       const poller = setInterval(fetchAllData, 8000);
 
-      // Connect to Socket.IO Server
-      const socket = io(window.location.origin || "http://localhost:5000", {
+      // Connect to Socket.IO Server (direct to Railway backend in production)
+      const socketUrl = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
+      const socket = io(socketUrl, {
         auth: { token }
       });
 
