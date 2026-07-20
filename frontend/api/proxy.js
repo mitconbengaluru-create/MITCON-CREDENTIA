@@ -8,9 +8,8 @@ export default async function handler(req, res) {
   // Read target backend URL from environment variables
   const backendUrl = process.env.BACKEND_URL || 'http://localhost:5000';
   
-  // Construct the target URL (e.g. /api/auth/login -> /auth/login)
-  const targetPath = req.url.startsWith('/api') ? req.url.slice(4) : req.url;
-  const targetUrl = `${backendUrl.replace(/\/$/, '')}${targetPath}`;
+  // Construct the target URL (preserving the full path including /api and query params)
+  const targetUrl = `${backendUrl.replace(/\/$/, '')}${req.url}`;
 
   try {
     const headers = { ...req.headers };
